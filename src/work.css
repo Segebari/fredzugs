@@ -1,0 +1,54 @@
+.work:hover .work-h3,
+.work:hover .work-h6 {
+  opacity: .2;
+}
+
+.work .work-h3,
+.work .work-h6 {
+  transition: transform 0.3s ease;
+}
+
+.work:hover .work-h3 {
+  transform: translateX(-10px);
+}
+
+.work:hover .work-h6 {
+  transform: translateX(10px);
+}
+
+.work {
+  position: relative;
+  cursor: pointer;
+}
+
+.hover-view {
+  position: absolute;
+  width: 25rem;
+  height: 22rem;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+}
+
+.work:hover .hover-view {
+  opacity: 1;
+}
+
+.view-button {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #F87216;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s ease;
+}

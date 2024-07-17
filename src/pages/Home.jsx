@@ -1,0 +1,22 @@
+import React from "react";
+import Hero from "../components/homepage/Hero";
+import AboutMe from "../components/homepage/AboutMe";
+import SomeWork from "../components/homepage/SomeWork";
+import SomeWorkSm from "../components/homepage/SomeWorkSm";
+import ContactHome from "../components/homepage/ContactHome";
+import Footer from "../components/Footer";
+
+const Home = () => {
+  return (
+    <>
+      <Hero />
+      <AboutMe />
+      <SomeWork />
+      <SomeWorkSm />
+      <ContactHome />
+      <Footer />
+    </>
+  );
+};
+
+export default Home;
