@@ -6,7 +6,7 @@ const Hero = () => {
     <>
       <div className="flex w-full h-[90vh] overflow-y-hidden">
         <div className="w-[15%]"></div>
-        <img src={img} alt="Me" className=" h-[30rem] object-cover md:object-contain" />
+        <img src={img} alt="Me" className=" h-[30rem] lg:h-[35rem] object-cover md:object-contain" />
         <div className="hidden md:flex w-[40%] items-center justify-left text-3xl">
           Front-End & React Native <br /> Developer
         </div>
