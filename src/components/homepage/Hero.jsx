@@ -16,7 +16,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="relative mt-[-10rem] lg:mt-[-8rem] text-9xl overflow-hidden flex flex-nowrap">
+      <div className="relative mt-[-15rem] lg:mt-[-8rem] text-9xl overflow-hidden flex flex-nowrap">
         <span className="inline-block mr-8 animate-marquee whitespace-nowrap">
           Fred Zugs -
         </span>
