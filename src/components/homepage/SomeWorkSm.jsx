@@ -33,7 +33,7 @@ const SomeWorkSm = () => {
   ];
 
   return (
-    <div className="lg:hidden">
+    <div id="work" className="lg:hidden">
       {" "}
       {/* Show on small screens, hide on lg and above */}
       <div id="work" className="w-full h-auto items-center flex flex-col">
