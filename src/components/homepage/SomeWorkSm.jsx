@@ -43,7 +43,7 @@ const SomeWorkSm = () => {
         {workItems.map((item, index) => (
           <div
             key={index}
-            className="w-full min-h-screen px-4 py-6"
+            className="w-full h-auto px-4 py-6"
           >
             <a
               href={item.link}

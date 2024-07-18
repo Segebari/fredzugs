@@ -56,7 +56,7 @@ const ContactHome = () => {
             <button class="text-white border px-4 sm:px-6 md:px-10 py-3 sm:py-4 md:py-5 rounded-full animated-hover hover:border-orange-500 text-sm sm:text-base mt-3 sm:mt-0">
               <a href="tel:08148260644">08148260644</a>
             </button>
-          </div>
+          </div>  
         </div>
       </div>
     </>
