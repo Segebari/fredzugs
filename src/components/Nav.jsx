@@ -1,8 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -11,6 +21,8 @@ const Nav = () => {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+
+  const workHref = isMobile ? "#work-sm" : "#work";
 
   return (
     <nav className="px-4 sm:px-6 lg:px-14 pt-8 text-xl relative">
@@ -28,7 +40,7 @@ const Nav = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-5">
           <li className="nav-item">
-            <a href="#work">Work</a>
+            <a href={workHref}>Work</a>
           </li>
           <li className="nav-item">
             <a href="#contact">Contact</a>
@@ -84,7 +96,7 @@ const Nav = () => {
       >
         <ul className="flex flex-col items-center justify-center h-full space-y-8 text-2xl">
           <li className="nav-item">
-            <a href="#work" onClick={closeMenu}>
+            <a href={workHref} onClick={closeMenu}>
               Work
             </a>
           </li>

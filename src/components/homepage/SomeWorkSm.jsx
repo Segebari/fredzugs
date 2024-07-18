@@ -36,15 +36,12 @@ const SomeWorkSm = () => {
     <div id="work" className="lg:hidden">
       {" "}
       {/* Show on small screens, hide on lg and above */}
-      <div id="work" className="w-full h-auto items-center flex flex-col">
+      <div id="work-sm" className="w-full h-auto items-center flex flex-col">
         <p className="text-xs text-secondary border-b border-secondary w-[90%] h-[3rem]">
           FEATURED WORK
         </p>
         {workItems.map((item, index) => (
-          <div
-            key={index}
-            className="w-full h-auto px-4 py-6"
-          >
+          <div key={index} className="w-full h-auto px-4 py-6">
             <a
               href={item.link}
               target="_blank"
