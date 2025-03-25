@@ -1,8 +1,8 @@
 import React from "react";
 import burgeon from "../../assets/img/burgeon.png";
 import bookhive from "../../assets/img/bookhive.png";
-import music from "../../assets/img/music.png";
-import rock from "../../assets/img/rock.png";
+import dice from "../../assets/img/dice.png";
+import rock from "../../assets/img/meta.png";
 
 const SomeWorkSm = () => {
   const workItems = [
@@ -19,16 +19,16 @@ const SomeWorkSm = () => {
       link: "https://zugs-bookhive.netlify.app/",
     },
     {
-      title: "MUSIC APP",
-      tech: "Javascript",
-      bgImage: music,
-      link: "https://zug-music.netlify.app/",
+      title: "DICE GAME",
+      tech: "MERN APP",
+      bgImage: dice,
+      link: "https://fair-dice-game.netlify.app/",
     },
     {
-      title: "ROCHAMBEAU",
-      tech: "Javascript",
+      title: "META APP",
+      tech: "META API",
       bgImage: rock,
-      link: "https://rock-paper-scissors-fred.netlify.app/",
+      link: "https://github.com/Segebari/woro-social/",
     },
   ];
 

@@ -31,11 +31,14 @@ const AboutMe = () => {
                     text-base sm:text-lg md:text-xl lg:text-2xl 
                     text-justify sm:text-left"
       >
-        Front-End Developer & React Native App Developer | Technical Writer |
-        Building user-friendly experiences across web and mobile (React,
-        Tailwind, Next.js). Strong design background and passion for clear
-        communication. Expanding into backend development with Node.js. 2+ years
-        in tech, crafting creative projects.
+        Hi, I'm Fred Zugs, a Full-Stack Developer specializing in the MERN
+        stack (MongoDB, Express.js, React, Node.js). With a strong design
+        background from advertising, I craft visually stunning, user-friendly
+        web and mobile apps that stand out. I'm proficient in React, Tailwind
+        CSS, and Next.js, and passionate about building seamless experiences
+        across the stack. With 2+ years in tech, I've delivered creative
+        projects, and I'm always eager to learn, share knowledge, and solve
+        problems through code.
       </p>
     </div>
   );
