@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+body {
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+@keyframes RightToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: RightToLeft 10s infinite linear;
+}
+
+
+.animation-container {
+  position: relative;
+  overflow: hidden;
+  width: 150px; /* Adjust based on your content */
+  height: 1.5em; /* Adjust based on your font size */
+}
+
+.code-by-fred,
+.fred-zugs {
+  position: absolute;
+  left: 0;
+  transition: transform 0.5s ease;
+}
+
+.code-by-fred {
+  transform: translateY(0);
+}
+
+.fred-zugs {
+  transform: translateY(100%);
+}
+
+.animation-container:hover .code-by-fred {
+  transform: translateY(-100%);
+}
+
+.animation-container:hover .fred-zugs {
+  transform: translateY(0);
+}
+
+
+
+
+/* work and contact effect */
+
+.nav-item {
+  position: relative;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  transform: translateY(-2px);
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 100%;
+  bottom: -5px;
+  left: 50%;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover::after {
+  transform: scaleX(1);
+}
+
+
+.animated-hover {
+  background-image: linear-gradient(to top, #F87216 0%, #F87216 0%);
+  background-size: 100% 0%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  transition: background-size 0.5s ease-in-out;
+}
+
+.animated-hover:hover {
+  background-size: 100% 100%;
+}
+
+.social:hover {
+  transform: translateY(-2px);
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
