@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import burgeon from "../../assets/img/burgeon.png";
 import bookhive from "../../assets/img/bookhive.png";
 import dice from "../../assets/img/dice.png";
